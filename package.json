@@ -1,23 +1,32 @@
 {
-  "name": "vertical-slider",
+  "name": "landing-page-vertical-slider",
   "version": "1.0.0",
-  "description": "vertical slider template",
-  "main": "index.js",
+  "description": "Landing page with vertical slider and collapsible nav menu",
+  "homepage": "https://github.com/InoreNeronI/landing-page-vertical-slider",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "start": "parcel serve assets/html/*.html --open",
+    "build": "parcel build assets/html/*.html --public-url /landing-page-vertical-slider",
+    "prestart": "prettier . --write"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/znematoadz/vertical-slider.git"
+    "url": "git+https://github.com/InoreNeronI/landing-page-vertical-slider.git"
   },
-  "author": "Gerald Jones",
+  "keywords": [],
+  "author": "Martin Mozos <martinmozos@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/znematoadz/vertical-slider/issues"
+    "url": "https://github.com/InoreNeronI/landing-page-vertical-slider/issues"
   },
-  "homepage": "https://znematoadz.github.io/vertical-slider",
-  "dependencies": {
-    "gh-pages": "^2.0.1"
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "prettier": "3.1.0"
+  },
+  "targets": {
+    "default": {
+      "context": "browser"
+    }
   }
 }

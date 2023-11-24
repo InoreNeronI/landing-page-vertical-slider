@@ -1,2 +1,1 @@
-﻿# vertical-slider
-https://znematoadz.github.io/vertical-slider/
+## Landing page with vertical slider and collapsible nav menu 🐦‍
